@@ -20,7 +20,7 @@ function calcularRiesgo(estatura: number, peso: number, edad: number): string {
       condicionRiesgo = "medio";
     }
   } else {
-    if (imc >= 22.0) {
+    if (imc < 22.0) {
       condicionRiesgo = "medio";
     } else {
       condicionRiesgo = "alto";
