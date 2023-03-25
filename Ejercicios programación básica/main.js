@@ -17,7 +17,7 @@ function calcularRiesgo(estatura, peso, edad) {
         }
     }
     else {
-        if (imc >= 22.0) {
+        if (imc < 22.0) {
             condicionRiesgo = "medio";
         }
         else {
