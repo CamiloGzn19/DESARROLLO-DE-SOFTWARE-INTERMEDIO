@@ -1,4 +1,5 @@
-import { LicenciaConduccion } from "./licenciaConduccion";
+import { LicenciaConduccion } from "./licenciaConduccion.js";
+import { Vehiculo } from "./vehiculo.js";
 
 export class Persona {
   nombre: string;
@@ -6,6 +7,7 @@ export class Persona {
   telefono: string;
   edad: number;
   licenciaConduccion: LicenciaConduccion;
+  vehiculos: Vehiculo[];
 
   constructor(
     nombre: string,
@@ -19,5 +21,6 @@ export class Persona {
     this.telefono = telefono;
     this.edad = edad;
     this.licenciaConduccion = licenciaConduccion;
+    this.vehiculos = [];
   }
 }

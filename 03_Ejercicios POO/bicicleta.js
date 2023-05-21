@@ -1,12 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Bicicleta = void 0;
-const vehiculo_js_1 = require("./vehiculo.js");
-class Bicicleta extends vehiculo_js_1.Vehiculo {
-    constructor(marca, modelo, color, ruedas) {
+import { Vehiculo } from "./vehiculo.js";
+export class Bicicleta extends Vehiculo {
+    constructor(marca, modelo, color, ruedas, tipo, luces) {
         super(marca, modelo, color, ruedas);
-        this.tipo = "urbana";
-        this.luces = false;
+        this.tipo = tipo;
+        this.luces = luces;
     }
 }
-exports.Bicicleta = Bicicleta;

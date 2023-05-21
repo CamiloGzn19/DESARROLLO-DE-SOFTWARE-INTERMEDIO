@@ -1,11 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Accidente = void 0;
-class Accidente {
-    constructor(fecha, descripcion, severidad) {
+export class Accidente {
+    constructor(fecha, descripcion, severidad, involucrados) {
         this.fecha = fecha;
         this.descripcion = descripcion;
         this.severidad = severidad;
+        this.involucrados = involucrados;
     }
 }
-exports.Accidente = Accidente;

@@ -1,20 +1,13 @@
-import { Persona } from "./persona";
+import { Persona } from "./persona.js";
 
 export class LicenciaConduccion {
   tipoLicencia: string;
   fechaExpedicion: Date;
   vigencia: Date;
-  persona: Persona;
 
-  constructor(
-    tipoLicencia: string,
-    fechaExpedicion: Date,
-    vigencia: Date,
-    persona: Persona
-  ) {
+  constructor(tipoLicencia: string, fechaExpedicion: Date, vigencia: Date) {
     this.tipoLicencia = tipoLicencia;
     this.fechaExpedicion = fechaExpedicion;
     this.vigencia = vigencia;
-    this.persona = persona;
   }
 }

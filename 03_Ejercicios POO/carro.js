@@ -1,11 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Carro = void 0;
-const motorizado_1 = require("./motorizado");
-class Carro extends motorizado_1.Motorizado {
-    constructor(marca, modelo, color, ruedas, placa) {
+import { Motorizado } from "./motorizado.js";
+export class Carro extends Motorizado {
+    constructor(marca, modelo, color, ruedas, placa, asientos) {
         super(marca, modelo, color, ruedas, placa);
-        this.asientos = 0;
+        this.asientos = asientos;
     }
 }
-exports.Carro = Carro;
